@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <div class="order-text">Информация о заказе. Сегодня {{ data.current_date }}</div>
+    {% block content %}{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+
+{% block title %}Список заказов{% endblock %}
+
+{% block content %}
+
+<div class="base"><ul>
+    {% for vitamin in data.vitamins %}
+        <li><a href="{% url 'vitamin_url' vitamin.id %}">{{ vitamin.title }}</a> </li>
+
+    {% empty %}
+        <li>Список пуст</li>
+    {% endfor %}
+</ul></div>
+{% endblock %}

@@ -1,0 +1,11 @@
+.order-text {
+    font-size: 40px;
+    font-family: Andale Mono, monospace;
+    background-color: darkolivegreen;
+    color: azure;
+}
+.base {
+    background-color: azure;
+    font-family: Andale Mono, monospace;
+    font-size: 30px;
+}

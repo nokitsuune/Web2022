@@ -1,0 +1,5 @@
+.DS_Store
+**/.idea
+bmstu/.idea
+**/__pycache__
+**/venv

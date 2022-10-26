@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Заказ №{{ data.id }}{% endblock %}
+
+{% block content %}
+    <div class="base">
+        <div>Название: {{ data.vitamin.title }}</div>
+        <div>Описание: {{ data.vitamin.description }}</div>
+    </div>
+{% endblock %}
